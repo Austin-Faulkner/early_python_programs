@@ -1,0 +1,900 @@
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Assignment operator test: for a sequence with cursor at tail.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...
+    The item [59] should be 60,
+    but it was 1 instead.
+Failed.
+Test of the sequence's items failed.
+
+Test 6 failed.
+END OF TEST 6.
+
+
+START OF TEST 7:
+Testing insert/attach when current DEFAULT_CAPACITY exceeded (3 points).
+Testing to see that attach works correctly when the
+current capacity is exceeded.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Testing to see that insert works correctly when the
+current capacity is exceeded.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+All tests of this seventh function have been passed.
+Test 7 got 3 points out of a possible 3.
+END OF TEST 7.
+
+Your sequence implementation has scored
+15 points out of the 21 points based on this test program.
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ clear
+
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ cd ../../../
+MacBook-Pro-3:Desktop austinriemannfaulkner$ cd Data\ Structures/03/Assign03SuppliedFiles
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ atom Sequence.cpp
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ make -f MakefileAuto 
+g++ -Wall -ansi -pedantic -std=c++11 -c Sequence.cpp
+g++ -Wall -ansi -pedantic -std=c++11 -c Assign03Auto.cpp
+Assign03Auto.cpp:675:14: warning: explicitly assigning value of variable of type 'CS3358_FA2019::sequence' to itself
+      [-Wself-assign-overloaded]
+    original = original;
+    ~~~~~~~~ ^ ~~~~~~~~
+1 warning generated.
+g++ Sequence.o Assign03Auto.o -o a3a
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ ./a3a
+Running tests for sequence class with a dynamic array
+
+START OF TEST 1:
+Testing insert, attach, and the constant member functions (4 points).
+Starting with an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+I am now using attach to put 10 into an empty sequence.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+I am now using insert to put 10 into an empty sequence.
+Segmentation fault: 11
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ make -f MakefileAuto 
+g++ -Wall -ansi -pedantic -std=c++11 -c Sequence.cpp
+g++ -Wall -ansi -pedantic -std=c++11 -c Assign03Auto.cpp
+Assign03Auto.cpp:675:14: warning: explicitly assigning value of variable of type 'CS3358_FA2019::sequence' to itself
+      [-Wself-assign-overloaded]
+    original = original;
+    ~~~~~~~~ ^ ~~~~~~~~
+1 warning generated.
+g++ Sequence.o Assign03Auto.o -o a3a
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ ./a3a
+Running tests for sequence class with a dynamic array
+
+START OF TEST 1:
+Testing insert, attach, and the constant member functions (4 points).
+Starting with an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+I am now using attach to put 10 into an empty sequence.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+I am now using insert to put 10 into an empty sequence.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Failed.
+Basic test of size() or is_item() failed.
+
+Test 1 failed.
+END OF TEST 1.
+
+
+START OF TEST 2:
+Testing situations where the cursor goes off the sequence (4 points).
+Using attach to put 20 and 30 in the sequence, and then calling
+advance, so that is_item should return false ... passed.
+Inserting 10, which should go at the sequence's front.
+Then calling advance three times to run cursor off the sequence ... passed.
+Calling attach to put the numbers 40, 50, 60 ...300 at the sequence's end.
+Now I will test that the sequence has 10, 20, 30, ...300.
+All tests of this second function have been passed.
+Test 2 got 4 points out of a possible 4.
+END OF TEST 2.
+
+
+START OF TEST 3:
+Testing remove_current (4 points).
+Using attach to build a sequence with 10,30.
+Insert a 20 before the 30, so entire sequence is 10,20,30.
+Testing that size() returns 3 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 20, so entire sequence is now 10,30.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 30, so entire sequence is now just 10 with no cursor.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Set the cursor to the start and remove the 10.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Using attach to build another sequence with 10,30.
+Insert a 20 before the 30, so entire sequence is 10,20,30.
+Testing that size() returns 3 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 20, so entire sequence is now 10,30.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Set the cursor to the start and remove the 10,
+so the sequence should now contain just 30.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 30 from the sequence, resulting in an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Build a new sequence by inserting 30, 10, 20 (so the sequence
+is 20, then 10, then 30). Then remove the 20.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Just for fun, I'll empty the sequence then fill it up, then
+empty it again. During this process, I'll try to determine
+whether any of the sequence's member functions access the
+array outside of its legal indexes.
+All tests of this third function have been passed.
+Test 3 got 4 points out of a possible 4.
+END OF TEST 3.
+
+
+START OF TEST 4:
+Testing the resize member function (2 points).
+I will now resize a sequence to a larger capacity, and then
+attach that many items. The sequence should NOT need to
+resize itself under this situation.
+    Test passed.
+Now I will call resize(1) for the sequence, but the actual
+sequence should not change because the sequence already has 
+60 items.
+    Test passed.
+All tests of this fourth function have been passed.
+Test 4 got 2 points out of a possible 2.
+END OF TEST 4.
+
+
+START OF TEST 5:
+Testing the copy constructor (2 points).
+Copy constructor test: for an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor at tail.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor near middle.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [30] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor near middle.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with no current item.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+All tests of this fifth function have been passed.
+Test 5 got 2 points out of a possible 2.
+END OF TEST 5.
+
+
+START OF TEST 6:
+Testing the assignment operator (2 points).
+Assignment operator test: for an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Assignment operator test: for a sequence with cursor at tail.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...
+    The item [59] should be 60,
+    but it was 1 instead.
+Failed.
+Test of the sequence's items failed.
+
+Test 6 failed.
+END OF TEST 6.
+
+
+START OF TEST 7:
+Testing insert/attach when current DEFAULT_CAPACITY exceeded (3 points).
+Testing to see that attach works correctly when the
+current capacity is exceeded.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Testing to see that insert works correctly when the
+current capacity is exceeded.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+All tests of this seventh function have been passed.
+a3a(8335,0x10896d5c0) malloc: Incorrect checksum for freed object 0x7ffe37c03010: probably modified after being freed.
+Corrupt value: 0x403f000000000000
+a3a(8335,0x10896d5c0) malloc: *** set a breakpoint in malloc_error_break to debug
+Abort trap: 6
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ make -f MakefileAuto cleanall
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ make -f MakefileAuto 
+g++ -Wall -ansi -pedantic -std=c++11 -c Sequence.cpp
+g++ -Wall -ansi -pedantic -std=c++11 -c Assign03Auto.cpp
+Assign03Auto.cpp:675:14: warning: explicitly assigning value of variable of type 'CS3358_FA2019::sequence' to itself
+      [-Wself-assign-overloaded]
+    original = original;
+    ~~~~~~~~ ^ ~~~~~~~~
+1 warning generated.
+g++ Sequence.o Assign03Auto.o -o a3a
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ ./a3a
+Running tests for sequence class with a dynamic array
+
+START OF TEST 1:
+Testing insert, attach, and the constant member functions (4 points).
+Starting with an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+I am now using attach to put 10 into an empty sequence.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+I am now using insert to put 10 into an empty sequence.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Failed.
+Basic test of size() or is_item() failed.
+
+Test 1 failed.
+END OF TEST 1.
+
+
+START OF TEST 2:
+Testing situations where the cursor goes off the sequence (4 points).
+Using attach to put 20 and 30 in the sequence, and then calling
+advance, so that is_item should return false ... passed.
+Inserting 10, which should go at the sequence's front.
+Then calling advance three times to run cursor off the sequence ... passed.
+Calling attach to put the numbers 40, 50, 60 ...300 at the sequence's end.
+Now I will test that the sequence has 10, 20, 30, ...300.
+All tests of this second function have been passed.
+Test 2 got 4 points out of a possible 4.
+END OF TEST 2.
+
+
+START OF TEST 3:
+Testing remove_current (4 points).
+Using attach to build a sequence with 10,30.
+Insert a 20 before the 30, so entire sequence is 10,20,30.
+Testing that size() returns 3 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 20, so entire sequence is now 10,30.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 30, so entire sequence is now just 10 with no cursor.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Set the cursor to the start and remove the 10.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Using attach to build another sequence with 10,30.
+Insert a 20 before the 30, so entire sequence is 10,20,30.
+Testing that size() returns 3 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 20, so entire sequence is now 10,30.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Set the cursor to the start and remove the 10,
+so the sequence should now contain just 30.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 30 from the sequence, resulting in an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Build a new sequence by inserting 30, 10, 20 (so the sequence
+is 20, then 10, then 30). Then remove the 20.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Just for fun, I'll empty the sequence then fill it up, then
+empty it again. During this process, I'll try to determine
+whether any of the sequence's member functions access the
+array outside of its legal indexes.
+All tests of this third function have been passed.
+Test 3 got 4 points out of a possible 4.
+END OF TEST 3.
+
+
+START OF TEST 4:
+Testing the resize member function (2 points).
+I will now resize a sequence to a larger capacity, and then
+attach that many items. The sequence should NOT need to
+resize itself under this situation.
+    Test passed.
+Now I will call resize(1) for the sequence, but the actual
+sequence should not change because the sequence already has 
+60 items.
+    Test passed.
+All tests of this fourth function have been passed.
+Test 4 got 2 points out of a possible 2.
+END OF TEST 4.
+
+
+START OF TEST 5:
+Testing the copy constructor (2 points).
+Copy constructor test: for an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor at tail.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor near middle.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [30] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor near middle.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with no current item.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+All tests of this fifth function have been passed.
+Test 5 got 2 points out of a possible 2.
+END OF TEST 5.
+
+
+START OF TEST 6:
+Testing the assignment operator (2 points).
+Assignment operator test: for an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Assignment operator test: for a sequence with cursor at tail.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...
+    The item [59] should be 60,
+    but it was 1 instead.
+Failed.
+Test of the sequence's items failed.
+
+a3a(8509,0x10fa5f5c0) malloc: Incorrect checksum for freed object 0x7fc748403240: probably modified after being freed.
+Corrupt value: 0x403c000000000000
+a3a(8509,0x10fa5f5c0) malloc: *** set a breakpoint in malloc_error_break to debug
+Abort trap: 6
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ make
+g++ -Wall -ansi -pedantic -std=c++11 -c Sequence.cpp
+g++ -Wall -ansi -pedantic -std=c++11 -c Assign03.cpp
+g++ Sequence.o Assign03.o -o a3
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ ./a3
+I have initialized an empty sequence of real numbers.
+
+Following choices are available: 
+  !  Activate start() function
+  +  Activate advance() function
+  ?  Print result from is_item() function
+  C  Print result from current() function
+  P  Print a copy of entire sequence
+  S  Print result from size() function
+  I  Insert a new number with insert(...) function
+  A  Attach a new number with attach(...) function
+  R  Activate remove_current() function
+  Q  Quit this test program
+Enter choice: q
+Quit option selected...terminating...
+Press Enter or Return when ready...
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ make -f MakefileAuto 
+g++ -Wall -ansi -pedantic -std=c++11 -c Assign03Auto.cpp
+Assign03Auto.cpp:675:14: warning: explicitly assigning value of variable of type 'CS3358_FA2019::sequence' to itself
+      [-Wself-assign-overloaded]
+    original = original;
+    ~~~~~~~~ ^ ~~~~~~~~
+1 warning generated.
+g++ Sequence.o Assign03Auto.o -o a3a
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ ./a3a
+Running tests for sequence class with a dynamic array
+
+START OF TEST 1:
+Testing insert, attach, and the constant member functions (4 points).
+Starting with an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+I am now using attach to put 10 into an empty sequence.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+I am now using insert to put 10 into an empty sequence.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Failed.
+Basic test of size() or is_item() failed.
+
+Test 1 failed.
+END OF TEST 1.
+
+
+START OF TEST 2:
+Testing situations where the cursor goes off the sequence (4 points).
+Using attach to put 20 and 30 in the sequence, and then calling
+advance, so that is_item should return false ... passed.
+Inserting 10, which should go at the sequence's front.
+Then calling advance three times to run cursor off the sequence ... passed.
+Calling attach to put the numbers 40, 50, 60 ...300 at the sequence's end.
+Now I will test that the sequence has 10, 20, 30, ...300.
+All tests of this second function have been passed.
+Test 2 got 4 points out of a possible 4.
+END OF TEST 2.
+
+
+START OF TEST 3:
+Testing remove_current (4 points).
+Using attach to build a sequence with 10,30.
+Insert a 20 before the 30, so entire sequence is 10,20,30.
+Testing that size() returns 3 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 20, so entire sequence is now 10,30.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 30, so entire sequence is now just 10 with no cursor.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Set the cursor to the start and remove the 10.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Using attach to build another sequence with 10,30.
+Insert a 20 before the 30, so entire sequence is 10,20,30.
+Testing that size() returns 3 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 20, so entire sequence is now 10,30.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [1] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Set the cursor to the start and remove the 10,
+so the sequence should now contain just 30.
+Testing that size() returns 1 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Remove the 30 from the sequence, resulting in an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Build a new sequence by inserting 30, 10, 20 (so the sequence
+is 20, then 10, then 30). Then remove the 20.
+Testing that size() returns 2 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Just for fun, I'll empty the sequence then fill it up, then
+empty it again. During this process, I'll try to determine
+whether any of the sequence's member functions access the
+array outside of its legal indexes.
+All tests of this third function have been passed.
+Test 3 got 4 points out of a possible 4.
+END OF TEST 3.
+
+
+START OF TEST 4:
+Testing the resize member function (2 points).
+I will now resize a sequence to a larger capacity, and then
+attach that many items. The sequence should NOT need to
+resize itself under this situation.
+    Test passed.
+Now I will call resize(1) for the sequence, but the actual
+sequence should not change because the sequence already has 
+60 items.
+    Test passed.
+All tests of this fourth function have been passed.
+Test 4 got 2 points out of a possible 2.
+END OF TEST 4.
+
+
+START OF TEST 5:
+Testing the copy constructor (2 points).
+Copy constructor test: for an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor at tail.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor near middle.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [30] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with cursor near middle.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+I'll call start() and look at the items one more time...
+The cursor should be at item [0] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...Passed.
+All tests passed for this sequence.
+
+Copy constructor test: for a sequence with no current item.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+All tests of this fifth function have been passed.
+Test 5 got 2 points out of a possible 2.
+END OF TEST 5.
+
+
+START OF TEST 6:
+Testing the assignment operator (2 points).
+Assignment operator test: for an empty sequence.
+Testing that size() returns 0 ... Passed.
+Testing that is_item() returns false ... Passed.
+I'll call start() and look at the items one more time...
+All tests passed for this sequence.
+
+Assignment operator test: for a sequence with cursor at tail.
+Testing that size() returns 60 ... Passed.
+Testing that is_item() returns true ... Passed.
+The cursor should be at item [59] of the sequence
+(counting the first item as [0]). I will advance the cursor
+to the end of the sequence, checking that each item is correct...
+    The item [59] should be 60,
+    but it was 1 instead.
+Failed.
+Test of the sequence's items failed.
+
+Segmentation fault: 11
+MacBook-Pro-3:Assign03SuppliedFiles austinriemannfaulkner$ 

@@ -1,0 +1,182 @@
+Python 3.7.4 (v3.7.4:e09359112e, Jul  8 2019, 14:54:52) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/GuessingGame.py 
+Welcome to the guessing game.  You have ten tries to guess my number.
+Please enter your guess: 50000
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: 300
+Your guess is too low.
+Guesses so far: 1
+Please enter your guess: -1
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: -1
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: -3
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: 1458
+That's correct!
+Congratulations! You guessed it in 2 guesses.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/GuessingGame.py 
+Welcome to the guessing game.  You have ten tries to guess my number.
+Please enter your guess: 100
+Your guess is too low.
+Guesses so far: 1
+Please enter your guess: 200
+Your guess is too low.
+Guesses so far: 2
+Please enter your guess: 300
+Your guess is too low.
+Guesses so far: 3
+Please enter your guess: 400
+Your guess is too low.
+Guesses so far: 4
+Please enter your guess: 500
+Your guess is too low.
+Guesses so far: 5
+Please enter your guess: 600
+Your guess is too low.
+Guesses so far: 6
+Please enter your guess: 700
+Your guess is too low.
+Guesses so far: 7
+Please enter your guess: 800
+Your guess is too low.
+Guesses so far: 8
+Please enter your guess: 900
+Your guess is too low.
+Guesses so far: 9
+Please enter your guess: 1000
+Your guess is too low.
+Guesses so far: 10
+Game over: you ran out of guesses.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/GuessingGame.py 
+Welcome to the guessing game.  You have ten tries to guess my number.
+Please enter your guess: 5000
+Your guess is too high.
+Guesses so far: 1
+Please enter your guess: 2500
+Your guess is too high.
+Guesses so far: 2
+Please enter your guess: 1250
+Your guess is too low.
+Guesses so far: 3
+Please enter your guess: 1800
+Your guess is too high.
+Guesses so far: 4
+Please enter your guess: 1500
+Your guess is too high.
+Guesses so far: 5
+Please enter your guess: 1400
+Your guess is too low.
+Guesses so far: 6
+Please enter your guess: 1450
+Your guess is too low.
+Guesses so far: 7
+Please enter your guess: 1460
+Your guess is too high.
+Guesses so far: 8
+Please enter your guess: 1458
+That's correct!
+Congratulations! You guessed it in 9 guesses.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/GuessingGame.py 
+Welcome to the guessing game.  You have ten tries to guess my number.
+Please enter your guess: 5000
+Your guess is too high.
+Guesses so far: 1
+Please enter your guess: 2500
+Your guess is too high.
+Guesses so far: 2
+Please enter your guess: 1200
+Your guess is too low.
+Guesses so far: 3
+Please enter your guess: 1800
+Your guess is too high.
+Guesses so far: 4
+Please enter your guess: 1500
+Your guess is too high.
+Guesses so far: 5
+Please enter your guess: 1350
+Your guess is too low.
+Guesses so far: 6
+Please enter your guess: 1375
+Your guess is too low.
+Guesses so far: 7
+Please enter your guess: 1400
+Your guess is too low.
+Guesses so far: 8
+Please enter your guess: 1425
+Your guess is too low.
+Guesses so far: 9
+Please enter your guess: 1450
+Your guess is too low.
+Guesses so far: 10
+Game over: you ran out of guesses.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/GuessingGame.py 
+Welcome to the guessing game.  You have ten tries to guess my number.
+Please enter your guess: 20000
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: 5000
+Your guess is too high.
+Guesses so far: 1
+Please enter your guess: -2500
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: -1200
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: 1
+Your guess is too low.
+Guesses so far: 2
+Please enter your guess: 1000
+Your guess is too low.
+Guesses so far: 3
+Please enter your guess: 1400
+Your guess is too low.
+Guesses so far: 4
+Please enter your guess: 1500
+Your guess is too high.
+Guesses so far: 5
+Please enter your guess: 1450
+Your guess is too low.
+Guesses so far: 6
+Please enter your guess: 1460
+Your guess is too high.
+Guesses so far: 7
+Please enter your guess: 1458
+That's correct!
+Congratulations! You guessed it in 8 guesses.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/GuessingGame.py 
+Welcome to the guessing game.  You have ten tries to guess my number.
+Please enter your guess: 20000
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: 5000
+Your guess is too high.
+Guesses so far: 1
+Please enter your guess: -1
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: -2
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: -4
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: 1000
+Your guess is too low.
+Guesses so far: 2
+Please enter your guess: 1400
+Your guess is too low.
+Guesses so far: 3
+Please enter your guess: 1500
+Your guess is too high.
+Guesses so far: 4
+Please enter your guess: -200
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: -300
+Your guess must be between 0001 and 9999.
+Please enter a valid guess: 1458
+That's correct!
+Congratulations! You guessed it in 5 guesses.
+>>> 

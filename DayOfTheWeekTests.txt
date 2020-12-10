@@ -1,0 +1,94 @@
+Python 3.7.4 (v3.7.4:e09359112e, Jul  8 2019, 14:54:52) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 1900
+Please enter the month (a string): January
+Please enter the day (an integer): 21
+The day of the week is Sunday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 1900
+Please enter the month (a string): January
+Please enter the day (an integer): 31
+The day of the week is Wednesday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 1900
+Please enter the month (a string): August
+Please enter the day (an integer): 30
+The day of the week is Thursday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 1900
+Please enter the month (a string): December
+Please enter the day (an integer): 31
+The day of the week is Monday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 1967
+Please enter the month (a string): January
+Please enter the day (an integer): 1
+The day of the week is Sunday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 1967
+Please enter the month (a string): February
+Please enter the day (an integer): 28
+The day of the week is Tuesday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 1967
+Please enter the month (a string): September
+Please enter the day (an integer): 17
+The day of the week is Sunday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2000
+Please enter the month (a string): January
+Please enter the day (an integer): 25
+The day of the week is Tuesday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2000
+Please enter the month (a string): February
+Please enter the day (an integer): 29
+The day of the week is Tuesday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2000
+Please enter the month (a string): October
+Please enter the day (an integer): 31
+The day of the week is Tuesday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2020
+Please enter the month (a string): February
+Please enter the day (an integer): 29
+The day of the week is Saturday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2100
+Please enter the month (a string): February
+Please enter the day (an integer): 29
+The day of the week is Monday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2100
+Please enter the month (a string): February
+Please enter the day (an integer): 28
+The day of the week is Sunday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2100
+Please enter the month (a string): January
+Please enter the day (an integer): 14
+The day of the week is Thursday.
+>>> 
+ RESTART: /Users/austinriemannfaulkner/Desktop/CS 303E/Homework/DayOfTheWeek.py 
+Please enter the year (an integer): 2100
+Please enter the month (a string): July
+Please enter the day (an integer): 4
+The day of the week is Sunday.
+>>> 

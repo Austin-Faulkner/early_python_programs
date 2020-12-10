@@ -1,0 +1,46 @@
+Python 3.7.4 (v3.7.4:e09359112e, Jul  8 2019, 14:54:52) 
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+========== RESTART: /Users/austinriemannfaulkner/Desktop/NextDay.py ==========
+Please enter the year: 2018
+Please enter the month: September
+Please enter the day: 19
+The next day is September 20, 2018.
+>>> 
+========== RESTART: /Users/austinriemannfaulkner/Desktop/NextDay.py ==========
+Please enter the year: 2018
+Please enter the month: September
+Please enter the day: 30
+The next day is October 1, 2018.
+>>> 
+========== RESTART: /Users/austinriemannfaulkner/Desktop/NextDay.py ==========
+Please enter the year: 2018
+Please enter the month: December
+Please enter the day: 31
+The next day is January 1, 2019.
+>>> 
+========== RESTART: /Users/austinriemannfaulkner/Desktop/NextDay.py ==========
+Please enter the year: 2019
+Please enter the month: February
+Please enter the day: 28
+The next day is March 1, 2019.
+>>> 
+========== RESTART: /Users/austinriemannfaulkner/Desktop/NextDay.py ==========
+Please enter the year: 2020
+Please enter the month: February
+Please enter the day: 28
+The next day is February 29, 2020.
+>>> 
+========== RESTART: /Users/austinriemannfaulkner/Desktop/NextDay.py ==========
+Please enter the year: 2020
+Please enter the month: February
+Please enter the day: 29
+The next day is March 1, 2020.
+>>> 
+========== RESTART: /Users/austinriemannfaulkner/Desktop/NextDay.py ==========
+Please enter the year: 2020
+Please enter the month: December
+Please enter the day: 31
+The next day is January 1, 2021.
+>>> 
